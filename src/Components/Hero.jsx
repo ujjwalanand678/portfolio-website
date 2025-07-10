@@ -1,28 +1,56 @@
 import React from "react";
+import myPic from "../assets/my-pic-3.JPG";
 
 const Hero = () => {
   return (
-    <div className="relative w-full h-screen overflow-hidden flex items-center justify-center">
-      {/* Hero content */}
-      <div className="z-10 text-center">
-        <h1 className="text-5xl md:text-7xl font-bold text-white">
-          Helping Entrepreneurs <br /> Dreams Come To Life
+    <section className="w-full min-h-screen grid grid-cols-1 md:grid-cols-2 items-center mt-8 gap-8 px-8 py-16">
+      {/* Left Content */}
+      <div className="text-white relative left-20">
+        <h1 className="text-4xl md:text-6xl font-bold leading-tight">
+          Welcome to my <br />
+          <span className="inline-block mt-2 ">
+            Portfolio!
+          </span>
         </h1>
 
-        <p className="mt-4 text-lg text-gray-300">
-          Start your project. Bring your vision to reality.
+        <p className="mt-6 text-lg text-white">
+        Passionate and detail-oriented Frontend Developer with a strong foundation in HTML, CSS, JavaScript, and modern frontend frameworks like React.js. Adept at building responsive and user-centric interfaces. Seeking to leverage my skills in a dynamic development team to deliver high-quality digital experiences.
         </p>
 
-        <div className="mt-8 flex flex-wrap justify-center gap-4">
-          <button className="bg-blue-500 text-white px-6 py-3 rounded hover:bg-blue-600 transition">
-            Start Your Project →
+        {/* <div className="mt-4">
+          <span className="inline-block bg-white text-black px-3 py-1 rounded-full text-sm font-semibold">
+            MERN
+          </span>
+        </div>
+
+        <p className="mt-4 text-gray-300">
+          My expertise includes Next.js 14 ✨ & React.js for high-scale
+          application development.
+        </p> */}
+
+        <div className="mt-8 flex flex-wrap gap-4">
+          <button className=" bg-white text-black px-6 py-3 rounded-full">
+            Hire me
           </button>
-          <button className="bg-transparent border border-white text-white px-6 py-3 rounded hover:bg-white hover:text-black transition">
-            View Portfolio →
+          <button className=" bg-white text-black px-6 py-3 rounded-full">
+            My Resume ↓
           </button>
         </div>
       </div>
-    </div>
+
+      {/* Right Image */}
+      <div className="relative flex justify-center items-center">
+        {/* Decorative Blob */}
+        <div className="absolute -top-8 -right-8 w-72 h-72 bg-pink-500 rounded-full mix-blend-multiply blur-2xl opacity-70"></div>
+
+        {/* Profile Image */}
+        <img
+          src={myPic}
+          alt="My Pic"
+          className="relative rounded-3xl z-10 w-full max-w-sm object-cover"
+        />
+      </div>
+    </section>
   );
 };
 

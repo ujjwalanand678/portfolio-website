@@ -1,68 +1,82 @@
 import React from "react";
 
+// ✅ Local icon imports
+import bootstrap from "../assets/bootstrap.svg";
+import tailwindcss from "../assets/tailwindcss.svg";
+
+import nextjs from "../assets/nextjs.svg";
+import docker from "../assets/docker.svg";
+import github from "../assets/github.svg";
+import html5 from "../assets/html-5.svg";
+import js from "../assets/js.svg";
+import express from "../assets/express.svg";
+import mongodb from "../assets/mongodb.svg";
+import react from "../assets/react.svg";
+import typescript from "../assets/typescript.svg";
+
 const technologies = [
   {
     name: "Next.js",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+    icon: nextjs,
+  },
+  {
+    name: "Bootstrap",
+    icon: bootstrap,
   },
   {
     name: "Tailwind CSS",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
+    icon: tailwindcss,
   },
-  {
-    name: "PostgreSQL",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
-  },
-  {
-    name: "GraphQL",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg",
-  },
-  {
-    name: "Figma",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
-  },
-  {
-    name: "AWS",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg",
-  },
+
   {
     name: "Docker",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+    icon: docker,
   },
   {
-    name: "Redis",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg",
+    name: "GitHub",
+    icon: github,
+  },
+  {
+    name: "HTML5",
+    icon: html5,
+  },
+  {
+    name: "JavaScript",
+    icon: js,
+  },
+  {
+    name: "Express",
+    icon: express,
   },
   {
     name: "MongoDB",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+    icon: mongodb,
   },
   {
     name: "React",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+    icon: react,
   },
   {
     name: "TypeScript",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+    icon: typescript,
   },
+  // {
+  //   name: "AWS",
+  //   icon: aws, // Add if you have aws.svg locally
+  // },
 ];
 
 const Technologies = () => {
   return (
-    <section id="technologies" className="bg-black text-white py-20 px-6">
+    <section id="technologies" className="bg-black text-white py-20 px-6 z-30">
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-4">
           Technologies I Work With
         </h2>
-        <p className="text-gray-400 mb-12">
-          Modern tools for modern solutions
-        </p>
+        <p className="text-gray-400 mb-12">Modern tools for modern solutions</p>
         <div className="flex flex-wrap justify-center gap-10">
           {technologies.map((tech) => (
-            <div
-              key={tech.name}
-              className="flex flex-col items-center gap-2"
-            >
+            <div key={tech.name} className="flex flex-col items-center gap-2">
               <div className="w-16 h-16 bg-gray-800 rounded-xl flex items-center justify-center">
                 <img
                   src={tech.icon}
