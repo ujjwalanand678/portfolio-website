@@ -3,18 +3,27 @@ import myPic from "../assets/my-pic-3.JPG";
 
 const Hero = () => {
   return (
-    <section className="w-full min-h-screen grid grid-cols-1 md:grid-cols-2 items-center mt-8 gap-8 px-8 py-16">
+    <section
+      id="home"
+      className="w-full min-h-screen grid grid-cols-1 md:grid-cols-2 items-center mt-8 gap-8 px-8 py-16 z-20"
+    >
       {/* Left Content */}
       <div className="text-white relative left-20">
         <h1 className="text-4xl md:text-6xl font-bold leading-tight">
           Welcome to my <br />
-          <span className="inline-block mt-2 ">
-            Portfolio!
-          </span>
+          <span className="inline-block mt-2 ">Portfolio!</span>
         </h1>
 
-        <p className="mt-6 text-lg text-white">
-        Passionate and detail-oriented Frontend Developer with a strong foundation in HTML, CSS, JavaScript, and modern frontend frameworks like React.js. Adept at building responsive and user-centric interfaces. Seeking to leverage my skills in a dynamic development team to deliver high-quality digital experiences.
+        <p className="mt-6 text-xl text-white">
+          I’m a passionate Full Stack Developer specializing in the MERN stack
+          (MongoDB, Express.js, React.js, Node.js). I love building dynamic,
+          scalable web applications that solve real-world problems and deliver
+          exceptional user experiences.
+          <br />
+          <br />
+          With a strong foundation in front-end and back-end development, I
+          design robust APIs, craft responsive user interfaces, and ensure
+          smooth deployment of modern web solutions.
         </p>
 
         {/* <div className="mt-4">
@@ -28,11 +37,11 @@ const Hero = () => {
           application development.
         </p> */}
 
-        <div className="mt-8 flex flex-wrap gap-4">
-          <button className=" bg-white text-black px-6 py-3 rounded-full">
+        <div className="mt-8 flex flex-wrap gap-4 z-30">
+          <button className="bg-white text-xl cursor-pointer text-black px-6 py-3 rounded-full hover:bg-blue-500 hover:text-white transition">
             Hire me
           </button>
-          <button className=" bg-white text-black px-6 py-3 rounded-full">
+          <button className="bg-white text-xl cursor-pointer text-black px-6 py-3 rounded-full hover:bg-blue-500 hover:text-white transition">
             My Resume ↓
           </button>
         </div>
@@ -47,7 +56,7 @@ const Hero = () => {
         <img
           src={myPic}
           alt="My Pic"
-          className="relative rounded-3xl z-10 w-full max-w-sm object-cover"
+          className="relative z-10 w-full max-w-md object-cover  mask-y-from-80%   mask-x-from-95%"
         />
       </div>
     </section>

@@ -15,7 +15,7 @@ import RocketTrail from "./Components/RocketTrail";
 function App() {
   return (
     <div className="relative">
-        <RocketTrail />
+        {/* <RocketTrail /> */}
       <RippleEffect />
       <StarsBackground />
      {/* <CursorTrail /> */}

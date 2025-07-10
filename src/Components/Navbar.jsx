@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-transparent backdrop-blur-md">
       <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between p-4">
-        <a href="#home" className="text-2xl font-bold text-white tracking-wide">
+        <a href="#home" className="text-3xl font-bold text-white tracking-wide">
           Ujjwal Anand
         </a>
         <button
@@ -45,7 +45,7 @@ const Navbar = () => {
             isOpen ? "block" : "hidden"
           } w-full md:block md:w-auto`}
         >
-          <ul className="flex flex-col md:flex-row md:space-x-8 mt-4 md:mt-0 text-white font-medium bg-white/5 md:bg-transparent rounded-lg p-4 md:p-0">
+          <ul className="flex flex-col text-2xl md:flex-row md:space-x-8 mt-4 md:mt-0 text-white font-medium bg-white/5 md:bg-transparent rounded-lg p-4 md:p-0">
             <li>
               <a
                 href="#home"

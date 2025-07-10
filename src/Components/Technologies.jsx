@@ -73,15 +73,15 @@ const Technologies = () => {
         <h2 className="text-3xl md:text-4xl font-bold mb-4">
           Technologies I Work With
         </h2>
-        <p className="text-gray-400 mb-12">Modern tools for modern solutions</p>
-        <div className="flex flex-wrap justify-center gap-10">
+        <p className="text-white text-lg mb-12">Modern tools for modern solutions</p>
+        <div className="flex justify-center gap-10">
           {technologies.map((tech) => (
             <div key={tech.name} className="flex flex-col items-center gap-2">
-              <div className="w-16 h-16 bg-gray-800 rounded-xl flex items-center justify-center">
+              <div className="w-20 h-20 bg-gray-300 rounded-xl flex items-center justify-center">
                 <img
                   src={tech.icon}
                   alt={tech.name}
-                  className="w-10 h-10 object-contain"
+                  className="w-15 h-15 object-contain"
                 />
               </div>
               <span className="mt-2 text-sm">{tech.name}</span>
