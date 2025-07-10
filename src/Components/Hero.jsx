@@ -1,40 +1,26 @@
 import React from "react";
 
 const Hero = () => {
-  const NUM_STARS = 500; // More stars = denser
-
-  const stars = Array.from({ length: NUM_STARS }).map((_, i) => {
-    const x = Math.random() * 100; // % left
-    const y = Math.random() * 100; // % top
-    const size = Math.random() * 2 + 1; // 1-3px
-    const delay = Math.random() * 3; // random delay
-    const duration = Math.random() * 2 + 1; // 1-3s
-
-    return (
-      <div
-        key={i}
-        className="absolute bg-white rounded-full twinkle"
-        style={{
-          left: `${x}%`,
-          top: `${y}%`,
-          width: `${size}px`,
-          height: `${size}px`,
-          animationDelay: `${delay}s`,
-          animationDuration: `${duration}s`,
-          opacity: Math.random() * 0.8 + 0.2,
-        }}
-      ></div>
-    );
-  });
-
   return (
-    <div className="relative w-full h-screen bg-black overflow-hidden">
-      {/* Stars */}
-      {stars}
-
+    <div className="relative w-full h-screen overflow-hidden flex items-center justify-center">
       {/* Hero content */}
-      <div className="relative z-10 flex items-center justify-center h-full">
-        <h1 className="text-5xl font-bold text-white">Build great products</h1>
+      <div className="z-10 text-center">
+        <h1 className="text-5xl md:text-7xl font-bold text-white">
+          Helping Entrepreneurs <br /> Dreams Come To Life
+        </h1>
+
+        <p className="mt-4 text-lg text-gray-300">
+          Start your project. Bring your vision to reality.
+        </p>
+
+        <div className="mt-8 flex flex-wrap justify-center gap-4">
+          <button className="bg-blue-500 text-white px-6 py-3 rounded hover:bg-blue-600 transition">
+            Start Your Project →
+          </button>
+          <button className="bg-transparent border border-white text-white px-6 py-3 rounded hover:bg-white hover:text-black transition">
+            View Portfolio →
+          </button>
+        </div>
       </div>
     </div>
   );

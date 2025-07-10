@@ -24,3 +24,54 @@
 html {
   scroll-behavior: smooth;
 }
+
+html, body {
+  background: black;
+}
+
+.twinkling-stars {
+  position: absolute;
+  width: 300%;
+  height: 300%;
+  background: transparent;
+  box-shadow:
+    200px 300px white,
+    400px 600px white,
+    800px 200px white,
+    1200px 400px white,
+    1600px 100px white,
+    2000px 800px white;
+  animation: moveStars 200s linear infinite;
+}
+
+@keyframes moveStars {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-1000px);
+  }
+}
+
+.cursor-star {
+  position: fixed;
+  width: 5px;
+  height: 5px;
+  background: white;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  animation: star-fade 1s forwards;
+}
+
+@keyframes star-fade {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(3);
+  }
+}
+
