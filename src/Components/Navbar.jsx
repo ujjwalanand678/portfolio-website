@@ -72,7 +72,7 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href="#skills"
+                href="#technologies"
                 className="block py-2 px-3 hover:text-blue-400 transition-colors duration-300"
               >
                 Skills

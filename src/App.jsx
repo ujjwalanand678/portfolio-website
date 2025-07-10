@@ -7,12 +7,21 @@ import Projects from "./Components/Projects";
 import Footer from "./Components/Footer";
 import StarsBackground from "./Components/StarsBackground";
 import CursorTrail from "./Components/CursorTrail";
+import RippleEffect from "./Components/RippleEffect";
+import CustomCursor from "./Components/CustomCursor";
+import BlobCursor from "./Components/BlobCursor";
+import RocketTrail from "./Components/RocketTrail";
 
 function App() {
   return (
     <div className="relative">
+        <RocketTrail />
+      <RippleEffect />
       <StarsBackground />
-     <CursorTrail />
+     {/* <CursorTrail /> */}
+     {/* <CustomCursor /> */}
+      {/* <BlobCursor /> */}
+     
 
       <Navbar />
       <Hero />
