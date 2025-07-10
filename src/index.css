@@ -21,3 +21,6 @@
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
+html {
+  scroll-behavior: smooth;
+}

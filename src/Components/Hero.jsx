@@ -1,7 +1,7 @@
 import React from "react";
 
 const Hero = () => {
-  const NUM_STARS = 100; // More stars = denser
+  const NUM_STARS = 500; // More stars = denser
 
   const stars = Array.from({ length: NUM_STARS }).map((_, i) => {
     const x = Math.random() * 100; // % left
