@@ -1,23 +1,46 @@
 import React, { useState } from "react";
 import { ArrowRightIcon, ArrowLeftIcon } from "@heroicons/react/24/solid";
+import collegeWebsit from "../assets/projects/college-website-react.PNG"
+import techShop from "../assets/projects/html-css-tech-shop.PNG"
+import ecommerce from "../assets/projects/frontend-ecommerce.PNG"
+import mealFinder from "../assets/projects/react-meal-finder.PNG"
+
 
 const projects = [
   {
-    title: "Binns Media Group",
+    title: "Edusity",
     description:
-      "A cutting-edge digital media platform showcasing diverse content portfolio.",
+      "A collage website.",
     image:
-      "https://images.unsplash.com/photo-1607083206173-132d86b98e65?auto=format&fit=crop&w=800&q=80",
-    caseStudy: "#",
+      collegeWebsit,
+    techStack: "#",
     website: "#",
   },
   {
-    title: "Startup Launchpad",
+    title: "Tech-Shop",
     description:
-      "A modern startup landing page to convert visitors into paying customers.",
+      "A modern html & css website design sample for online tech shop website.",
     image:
-      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80",
-    caseStudy: "#",
+      techShop,
+    techStack: "#",
+    website: "#",
+  },
+    {
+    title: "ECommerce",
+    description:
+      "ECommerce application where users can browse products, add them to a cart.",
+    image:
+      ecommerce,
+    techStack: "#",
+    website: "#",
+  },
+    {
+    title: "Meal Finder",
+    description:
+      "Meal Finder is a simple yet powerful recipe search app built with React. Users can search for meals by name, browse random recipes, and view detailed instructions and ingredients.",
+    image:
+      mealFinder,
+    techStack: "#",
     website: "#",
   },
   // Add more projects here...
