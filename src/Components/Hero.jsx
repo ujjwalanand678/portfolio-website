@@ -14,7 +14,7 @@ const Hero = () => {
           <span className="inline-block mt-2 ">Portfolio!</span>
         </h1>
 
-        <p className="mt-6 text-xl text-gray-200">
+        <p className="mt-6 text-2xl text-gray-200">
           I’m a passionate Full Stack Developer specializing in the MERN stack
           (MongoDB, Express.js, React.js, Node.js). I love building dynamic,
           scalable web applications that solve real-world problems and deliver
