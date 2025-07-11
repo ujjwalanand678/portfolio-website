@@ -1,47 +1,42 @@
 import React, { useState } from "react";
 import { ArrowRightIcon, ArrowLeftIcon } from "@heroicons/react/24/solid";
-import collegeWebsit from "../assets/projects/college-website-react.PNG"
-import techShop from "../assets/projects/html-css-tech-shop.PNG"
-import ecommerce from "../assets/projects/frontend-ecommerce.PNG"
-import mealFinder from "../assets/projects/react-meal-finder.PNG"
-
+import collegeWebsit from "../assets/projects/college-website-react.PNG";
+import techShop from "../assets/projects/html-css-tech-shop.PNG";
+import ecommerce from "../assets/projects/frontend-ecommerce.PNG";
+import mealFinder from "../assets/projects/react-meal-finder.PNG";
 
 const projects = [
   {
     title: "Edusity",
-    description:
-      "A collage website.",
-    image:
-      collegeWebsit,
-    techStack: "#",
-    website: "#",
+    description: "A collage website.",
+    image: collegeWebsit,
+    techStack: "React JS , HTML, CSS",
+    website: "https://front-end-react-js-educity-college.vercel.app/",
   },
   {
     title: "Tech-Shop",
     description:
       "A modern html & css website design sample for online tech shop website.",
-    image:
-      techShop,
-    techStack: "#",
-    website: "#",
+    image: techShop,
+    techStack: "HTML, CSS",
+    website: "https://ujjwalanand678.github.io/Tech-shop-html-css-project/",
   },
-    {
+  {
     title: "ECommerce",
     description:
       "ECommerce application where users can browse products, add them to a cart.",
-    image:
-      ecommerce,
-    techStack: "#",
-    website: "#",
+    image: ecommerce,
+    techStack: "React JS , HTML, CSS",
+    website:
+      "https://ujjwalanand678.github.io/FrontEnd-react-js-E-commerce-project-2/",
   },
-    {
+  {
     title: "Meal Finder",
     description:
       "Meal Finder is a simple yet powerful recipe search app built with React. Users can search for meals by name, browse random recipes, and view detailed instructions and ingredients.",
-    image:
-      mealFinder,
-    techStack: "#",
-    website: "#",
+    image: mealFinder,
+    techStack: "React JS , HTML, CSS",
+    website: "https://react-js-meal-recipe-finder-project.vercel.app/",
   },
   // Add more projects here...
 ];
@@ -65,17 +60,22 @@ const Projects = () => {
         <h2 className="inline-block mb-4 px-6 py-3 rounded-full text-3xl font-bold border border-blue-500 uppercase tracking-widest">
           Featured Projects
         </h2>
-        
+
         <p className="text-gray-200 max-w-2xl text-2xl mx-auto">
-          Explore <span className="font-semibold text-gray-100">real results</span> of my recent projects.
-          Each solution delivered <span className="font-semibold text-gray-100">measurable business impact</span> for our clients.
+          Explore{" "}
+          <span className="font-semibold text-gray-100">real results</span> of
+          my recent projects. Each solution delivered{" "}
+          <span className="font-semibold text-gray-100">
+            measurable business impact
+          </span>{" "}
+          for our clients.
         </p>
       </div>
 
       {/* Project Card */}
-      <div className="relative max-w-6xl mx-auto flex flex-col md:flex-row bg-[#111] rounded-2xl overflow-hidden shadow-lg">
+      <div className="relative w-[90%] mx-auto flex flex-col md:flex-row bg-[#111] rounded-2xl overflow-hidden shadow-lg">
         {/* Left Image */}
-        <div className="md:w-1/2 p-8 flex justify-center items-center">
+        <div className="md:w-[70%] p-8 flex justify-center items-center px-10">
           <img
             src={project.image}
             alt={project.title}
@@ -85,19 +85,19 @@ const Projects = () => {
 
         {/* Right Content */}
         <div className="md:w-1/2 p-8 flex flex-col justify-center">
-          <h3 className="text-2xl md:text-3xl font-bold mb-4">{project.title}</h3>
-          <p className="text-gray-400 mb-6">{project.description}</p>
-          <div className="flex flex-wrap gap-4">
-            <a
-              href={project.caseStudy}
-              className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 px-5 py-3 rounded-full font-medium transition"
-            >
-              View Case Study
-              <ArrowRightIcon className="w-4 h-4" />
-            </a>
+          <h3 className="text-2xl md:text-3xl font-bold mb-4">
+            {project.title}
+          </h3>
+          <p className="text-gray-200 mb-6">{project.description}</p>
+          <div className="justify-self-start">
+            <p className="inline-flex items-center gap-2 px-5 py-3 text-lg font-bold ">
+              Tech-stack : {project.techStack}
+            </p>
+            <br />
+            <br />
             <a
               href={project.website}
-              className="inline-flex items-center gap-2 border border-gray-600 px-5 py-3 rounded-full font-medium hover:bg-white hover:text-black transition"
+              className="inline-flex items-center gap-2 border bg-gray-100 text-black border-gray-600 px-5 py-3 rounded-full font-medium hover:bg-gray-300 hover:text-black transition"
             >
               Visit Website
               <ArrowRightIcon className="w-4 h-4" />
@@ -121,7 +121,7 @@ const Projects = () => {
       </div>
 
       {/* View All Button */}
-      <div className="text-center mt-12">
+      {/* <div className="text-center mt-12">
         <a
           href="#"
           className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-full font-medium transition"
@@ -129,7 +129,7 @@ const Projects = () => {
           View All Projects
           <ArrowRightIcon className="w-4 h-4" />
         </a>
-      </div>
+      </div> */}
     </section>
   );
 };
