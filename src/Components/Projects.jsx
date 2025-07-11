@@ -37,7 +37,7 @@ const Projects = () => {
   const project = projects[current];
 
   return (
-    <section id="projects" className="bg-black text-white py-20 px-6">
+    <section id="projects" className="bg-black text-gray-100 py-20 px-6">
       <div className="max-w-6xl mx-auto text-center mb-12">
         <span className="inline-block mb-4 px-4 py-1 rounded-full border border-blue-500 text-xs uppercase tracking-widest">
           Featured Projects
@@ -46,8 +46,8 @@ const Projects = () => {
           Interactive Portfolio
         </h2>
         <p className="text-gray-400 max-w-2xl mx-auto">
-          Explore <span className="font-semibold text-white">real results</span> from our recent projects.
-          Each solution delivered <span className="font-semibold text-white">measurable business impact</span> for our clients.
+          Explore <span className="font-semibold text-gray-100">real results</span> from our recent projects.
+          Each solution delivered <span className="font-semibold text-gray-100">measurable business impact</span> for our clients.
         </p>
       </div>
 

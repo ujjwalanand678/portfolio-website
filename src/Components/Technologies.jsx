@@ -45,7 +45,7 @@ const technologies = [
     icon: js,
   },
   {
-    name: "Express",
+    name: "Express JS",
     icon: express,
   },
   {
@@ -53,7 +53,7 @@ const technologies = [
     icon: mongodb,
   },
   {
-    name: "React",
+    name: "React JS",
     icon: react,
   },
   {
@@ -68,12 +68,12 @@ const technologies = [
 
 const Technologies = () => {
   return (
-    <section id="technologies" className="bg-black text-white py-20 px-6 z-30">
+    <section id="technologies" className="bg-black text-gray-200 py-20 px-6 z-30">
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-4">
           Technologies I Work With
         </h2>
-        <p className="text-white text-lg mb-12">Modern tools for modern solutions</p>
+        <p className="text-gray-200 text-lg mb-12">Modern tools for modern solutions</p>
         <div className="flex justify-center gap-10">
           {technologies.map((tech) => (
             <div key={tech.name} className="flex flex-col items-center gap-2">
@@ -84,7 +84,7 @@ const Technologies = () => {
                   className="w-15 h-15 object-contain"
                 />
               </div>
-              <span className="mt-2 text-sm">{tech.name}</span>
+              <span className="mt-2 text-sm font-bold">{tech.name}</span>
             </div>
           ))}
         </div>

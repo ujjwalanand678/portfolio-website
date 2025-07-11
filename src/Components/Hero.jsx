@@ -8,13 +8,13 @@ const Hero = () => {
       className="w-full min-h-screen grid grid-cols-1 md:grid-cols-2 items-center mt-8 gap-8 px-8 py-16 z-20"
     >
       {/* Left Content */}
-      <div className="text-white relative left-20">
+      <div className="text-gray-200 relative left-20">
         <h1 className="text-4xl md:text-6xl font-bold leading-tight">
           Welcome to my <br />
           <span className="inline-block mt-2 ">Portfolio!</span>
         </h1>
 
-        <p className="mt-6 text-xl text-white">
+        <p className="mt-6 text-xl text-gray-200">
           I’m a passionate Full Stack Developer specializing in the MERN stack
           (MongoDB, Express.js, React.js, Node.js). I love building dynamic,
           scalable web applications that solve real-world problems and deliver
@@ -38,10 +38,10 @@ const Hero = () => {
         </p> */}
 
         <div className="mt-8 flex flex-wrap gap-4 z-30">
-          <button className="bg-white text-xl cursor-pointer text-black px-6 py-3 rounded-full hover:bg-blue-500 hover:text-white transition">
+          <button className="bg-gray-200 text-xl cursor-pointer text-black px-6 py-3 rounded-full hover:bg-blue-500 hover:text-gray-100 transition">
             Hire me
           </button>
-          <button className="bg-white text-xl cursor-pointer text-black px-6 py-3 rounded-full hover:bg-blue-500 hover:text-white transition">
+          <button className="bg-gray-200 text-xl cursor-pointer text-black px-6 py-3 rounded-full hover:bg-blue-500 hover:text-gray-100 transition">
             My Resume ↓
           </button>
         </div>

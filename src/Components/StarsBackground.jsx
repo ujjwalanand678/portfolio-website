@@ -30,7 +30,7 @@ const StarsBackground = () => {
   });
 
   return (
-    <div className="fixed inset-0 z-10 overflow-hidden">
+    <div className="fixed inset-0  overflow-hidden">
       {stars}
     </div>
   );
