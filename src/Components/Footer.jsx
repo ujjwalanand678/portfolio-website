@@ -4,18 +4,18 @@ import { FaLinkedin, FaCalendarAlt, FaTrophy } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-gray-300 px-6 py-20">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+    <footer id="contact" className="bg-black text-gray-200  py-20 z-10">
+      <div className=" mx-10 grid grid-cols-1 md:grid-cols-3 gap-12 justify-items-center">
         {/* Start a Project */}
         <div>
           <h3 className="text-2xl font-bold mb-4">Start a Project</h3>
-          <p className="mb-6 text-gray-400">Let's create your next big idea.</p>
-          <a
+          <p className="mb-6 text-gray-200">Let's create your next big idea.</p>
+          <button
             href="#contact"
-            className="inline-flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-black font-semibold px-6 py-3 rounded-md transition"
+            className="inline-flex items-center gap-2 cursor-pointer bg-gray-100 hover:bg-gray-300 text-black font-semibold px-6 py-3 rounded-md transition"
           >
             Get in Touch <ArrowRightIcon className="w-4 h-4" />
-          </a>
+          </button>
         </div>
 
         {/* Services */}
@@ -26,12 +26,12 @@ const Footer = () => {
             <li>Web Development</li>
             <li>SaaS Development</li>
             <li>AI Integration</li>
-            <li>Cybersecurity</li>
+            
           </ul>
         </div>
 
         {/* Tools */}
-        <div>
+        {/* <div>
           <h3 className="text-xl font-bold mb-4">Tools</h3>
           <ul className="space-y-2">
             <li>Website Analyzer</li>
@@ -39,7 +39,7 @@ const Footer = () => {
             <li>Project Timeline</li>
             <li>AI Crawler Optimization</li>
           </ul>
-        </div>
+        </div> */}
 
         {/* Connect */}
         <div>
@@ -51,16 +51,16 @@ const Footer = () => {
             <li className="flex items-center gap-2">
               <FaCalendarAlt /> Schedule a Call
             </li>
-            <li className="flex items-center gap-2">
+            {/* <li className="flex items-center gap-2">
               <FaTrophy /> Awwwards
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>
 
       <hr className="my-12 border-gray-700" />
 
-      <p className="text-center text-gray-500 text-sm">
+      <p className="text-center text-gray-100 text-xl ">
         © 2025 Ujjwal Anand. All rights reserved.
       </p>
     </footer>
