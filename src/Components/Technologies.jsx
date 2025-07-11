@@ -70,10 +70,10 @@ const Technologies = () => {
   return (
     <section id="technologies" className="bg-black text-gray-200 py-20 px-6 z-30">
       <div className="max-w-6xl mx-auto text-center">
-        <h2 className="inline-block mb-4 px-6 py-3 rounded-full text-3xl font-bold border border-blue-500 uppercase tracking-widest">
+        <h2 className="inline-block mb-4 px-6 py-3 rounded-full text-2xl font-bold border border-blue-500 uppercase tracking-widest">
           Technologies I Work With
         </h2>
-        <p className="text-gray-200 text-2xl mb-12">Modern tools for modern solutions</p>
+        <p className="text-gray-200 text-xl mb-12">Modern tools for modern solutions</p>
         <div className="flex justify-center gap-10">
           {technologies.map((tech) => (
             <div key={tech.name} className="flex flex-col items-center gap-2">

@@ -1,7 +1,7 @@
 const About = () => (
   <section id="about" className="min-h-screen flex items-center justify-center bg-black text-white p-10">
     <div className="max-w-6xl mx-auto text-center">
-      <h2 className="inline-block mb-4 px-6 py-3 rounded-full text-3xl font-bold border border-blue-500 uppercase tracking-widest">About Me</h2>
+      <h2 className="inline-block mb-4 px-6 py-3 rounded-full text-2xl font-bold border border-blue-500 uppercase tracking-widest">About Me</h2>
       <p className="text-xl leading-relaxed">
       Hi! I’m Ujjwal Anand , a passionate Full-Stack Developer specializing in the MERN stack (MongoDB, Express.js, React, Node.js). I love building clean, responsive web applications that solve real-world problems.
 

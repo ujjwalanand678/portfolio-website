@@ -1,6 +1,6 @@
 import React from "react";
 import myPic from "../assets/my-pic-3.JPG";
-
+import resume from "../assets/resume/UJJWAL ANAND-FrontEnd-React.pdf";
 const Hero = () => {
   return (
     <section
@@ -41,22 +41,24 @@ const Hero = () => {
           <button className="bg-gray-200 text-xl cursor-pointer text-black px-6 py-3 rounded-full hover:bg-blue-500 hover:text-gray-100 transition">
             Hire me
           </button>
-          <button className="bg-gray-200 text-xl cursor-pointer text-black px-6 py-3 rounded-full hover:bg-blue-500 hover:text-gray-100 transition">
+          <a
+            href={resume}
+            download
+            target="_blank"
+            className="bg-gray-200 text-xl cursor-pointer text-black px-6 py-3 rounded-full hover:bg-blue-500 hover:text-gray-100 transition inline-block text-center"
+          >
             My Resume ↓
-          </button>
+          </a>
         </div>
       </div>
 
       {/* Right Image */}
       <div className="relative flex justify-center items-center">
-        {/* Decorative Blob */}
-        <div className="absolute -top-8 -right-8 w-72 h-72 bg-pink-500 rounded-full mix-blend-multiply blur-2xl opacity-70"></div>
-
         {/* Profile Image */}
         <img
           src={myPic}
           alt="My Pic"
-          className="relative z-10 w-full max-w-md object-cover  mask-y-from-80%   mask-x-from-95%"
+          className="relative z-10 w-[90%] max-w-md object-cover  mask-y-from-80%   mask-x-from-95%"
         />
       </div>
     </section>

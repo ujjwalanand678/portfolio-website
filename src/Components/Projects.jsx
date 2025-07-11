@@ -56,12 +56,12 @@ const Projects = () => {
 
   return (
     <section id="projects" className="bg-black text-gray-100 py-20 px-6">
-      <div className="max-w-6xl mx-auto text-center mb-12">
-        <h2 className="inline-block mb-4 px-6 py-3 rounded-full text-3xl font-bold border border-blue-500 uppercase tracking-widest">
+      <div className="max-w-5xl mx-auto text-center mb-12">
+        <h2 className="inline-block mb-4 px-6 py-3 rounded-full text-2xl font-bold border border-blue-500 uppercase tracking-widest">
           Featured Projects
         </h2>
 
-        <p className="text-gray-200 max-w-2xl text-2xl mx-auto">
+        <p className="text-gray-200 max-w-2xl text-xl mx-auto">
           Explore{" "}
           <span className="font-semibold text-gray-100">real results</span> of
           my recent projects. Each solution delivered{" "}
@@ -97,6 +97,7 @@ const Projects = () => {
             <br />
             <a
               href={project.website}
+              target="_blank"
               className="inline-flex items-center gap-2 border bg-gray-100 text-black border-gray-600 px-5 py-3 rounded-full font-medium hover:bg-gray-300 hover:text-black transition"
             >
               Visit Website
